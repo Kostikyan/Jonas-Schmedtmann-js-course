@@ -32,7 +32,7 @@ let job1 = 'programmer'
 let job2 = 'teacher'
 
 // much better than job1 and job2
-let myFisrtJob = "Programmer";
+let myFirstJob = "Programmer";
 let myCurrentJob = "Teacher";
 
 // line comment type in js
@@ -40,7 +40,7 @@ let myCurrentJob = "Teacher";
 
 let booleanTrueValue = true;
 let booleanFalseValue = false;
-let booleanExample = 1 + 1 == 2; // it's will be true because 1+1 = 2
+let booleanExample = 1 + 1 == 2; // it will be true because 1+1 = 2
 
 // types of values
 console.log(typeof true);
@@ -62,11 +62,11 @@ console.log(year);
 console.log(typeof year);
 
 year = 1991;
-// after line 59 variable year not undefiend, its number
+// after line 59 variable year not undefined, its number
 console.log(typeof year);
 
 /*
-in js we have 3 keywords for declare varibales:
+in js we have 3 keywords for declare variables:
  
 let
 var
@@ -118,7 +118,7 @@ console.log(ageJonas * 2, ageJonas / 10);
 // 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 console.log(2 ** 3);
 
-// aslo we can use operator + for concatenate strings
+// also we can use operator + for concatenate strings
 const firstName = "jonas";
 const lastName = "Schmedtmann";
 console.log(firstName + " " + lastName);
@@ -189,7 +189,7 @@ const age_1 = 19;
 const isOldEnough = age_1 >= 18;
 
 // if boolean value isOldEnough == true, then code in if's block will be executed  
-// also i can replace age_1 >= 18 condition in if, and its will be same
+// also I can replace age_1 >= 18 condition in if, and its will be same
 if (isOldEnough) {
     console.log("Sarah can start driving license 🚗")
 } else {
@@ -208,3 +208,28 @@ if (birthYear_2 <= 2000) {
 console.log(century);
 
 
+// TYPE CONVERSION
+const inputYear = '1991';
+console.log(Number(inputYear)); // typeOf: number
+console.log(inputYear + 18); // typeOf: string, result: 199118
+console.log(Number(inputYear) + 18) // typeOf: number, result: 2009
+console.log(Number('Jonas')) // result: NaN
+console.log(typeof NaN) // result: number
+
+console.log(String(23), 23) // result 23 23  |  BUT SECOND "23" WITH ANOTHER COLOR.
+
+// TYPE COERCION
+console.log('I am ' + 23 + ' years old'); // ALL 3 METHODS ARE WITH SAME RESULT
+console.log('I am ' + '23' + ' years old'); // ALL 3 METHODS ARE WITH SAME RESULT
+console.log('I am ' + String(23) + ' years old'); // ALL 3 METHODS ARE WITH SAME RESULT
+console.log('23' - '10' - 3); // result: 10, because it will be converted to number auto.
+console.log('23' * '2'); // result: 46, because it will be converted to number auto.
+console.log('23' / '2'); // result: 11.5, because it will be converted to number auto.
+
+let n = '1' + 1; // 11  
+n = n - 1; // 11 - 1 = 10
+console.log(n); // result 10
+
+console.log(2 + 3 + 4 + '5') // result 95, 2+3+4=9, 9 + '5' = 95
+
+// continue in script-2.js

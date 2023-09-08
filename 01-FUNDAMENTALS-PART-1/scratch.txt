@@ -17,3 +17,5 @@ The 7 primitive data types:
 Difference between types undefiend and null:
 undefiend ex: let childeren;
 null ex: let childeren = null;
+
+5 falsy values: 0, '', undefined, null, NuN
